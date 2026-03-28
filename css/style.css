@@ -18,6 +18,20 @@
   --card-bg: #1a1a1a;
 }
 
+/* Hamburger */
+#nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  line-height: 1;
+}
+#nav-toggle:hover { color: var(--text); border-color: var(--muted); }
+
 /* Theme toggle button */
 #theme-toggle {
   background: none;
@@ -279,8 +293,27 @@ footer {
 
 /* Phone (≤ 600px) */
 @media (max-width: 600px) {
-  nav { margin-bottom: 40px; }
-  nav ul { gap: 20px; }
+  nav { margin-bottom: 40px; position: relative; }
+  #nav-toggle { display: block; }
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    z-index: 100;
+    padding: 8px 0;
+  }
+  nav ul li a {
+    display: block;
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+  nav.open ul { display: flex; }
 
   .hero { margin-bottom: 40px; }
   .hero h1 { font-size: 1.5rem; }
