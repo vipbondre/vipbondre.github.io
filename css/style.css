@@ -148,6 +148,8 @@ section h2 {
 .education-item .degree { font-weight: 600; font-size: 0.95rem; margin-bottom: 2px; }
 .education-item .institution { color: var(--muted); font-size: 0.875rem; }
 .education-item .period { color: var(--muted); font-size: 0.8rem; }
+.education-item .coursework { font-size: 0.875rem; color: var(--muted); margin-top: 10px; }
+.education-item .coursework-label { color: var(--text); font-weight: 600; margin-right: 6px; }
 
 /* Contact page */
 .contact-info { display: flex; flex-direction: column; gap: 16px; }

@@ -11,9 +11,9 @@
     <div class="container">
       <a href="index.html" class="logo">vipbondre</a>
       <ul>
-        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Experience</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -23,84 +23,169 @@
 
       <div class="page-header">
         <h1>Projects</h1>
-        <p>Things I've built, mostly in the blockchain space.</p>
+        <p>
+          <a href="#blockchain">Blockchain</a> &nbsp;&middot;&nbsp;
+          <a href="#systems">Systems &amp; Algorithms</a> &nbsp;&middot;&nbsp;
+          <a href="#research">Research</a>
+        </p>
       </div>
 
-      <div class="project-list">
+      <section id="blockchain">
+        <h2>Blockchain</h2>
+        <div class="project-list">
 
-        <div class="project-card">
-          <h3>Trust in the Shadow</h3>
-          <p>
-            A decentralised game built on Ethereum where players face a Prisoner's Dilemma against a bot.
-            Players bet ETH and choose to "Steal" or "Share" across 10 rounds — winning doubles their bet.
-            Built with Solidity smart contracts deployed on Sepolia Testnet, with MetaMask integration.
-          </p>
-          <div class="tags">
-            <span class="tag">Solidity</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Hardhat</span>
-            <span class="tag">ethers.js</span>
-            <span class="tag">Ethereum</span>
+          <div class="project-card">
+            <h3>Trust in the Shadow</h3>
+            <p>
+              A decentralised game built on Ethereum where players face a Prisoner's Dilemma against a bot.
+              Players bet ETH and choose to "Steal" or "Share" across 10 rounds — winning doubles their bet.
+              Built with Solidity smart contracts deployed on Sepolia Testnet, with MetaMask integration.
+            </p>
+            <div class="tags">
+              <span class="tag">Solidity</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Hardhat</span>
+              <span class="tag">ethers.js</span>
+              <span class="tag">Ethereum</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vipbondre/game_of_life" target="_blank">GitHub &rarr;</a>
+              <a href="https://shareorsteal.vercel.app/" target="_blank">Try it &rarr;</a>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/vipbondre/game_of_life" target="_blank">GitHub &rarr;</a>
-            <a href="https://shareorsteal.vercel.app/" target="_blank">Try it &rarr;</a>
+
+          <div class="project-card">
+            <h3>Get Your Pass</h3>
+            <p>
+              A private, secure ticketing system powered by the XRP Ledger. Organisers cannot identify buyers;
+              payment processors are unaware of the purchase purpose. Supports offline ticket validation
+              without a central authority. Won the XRPLLabs Hackathon conducted with IIT Bombay.
+            </p>
+            <div class="tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">XRPL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vipbondre/tokenization_xrpl" target="_blank">GitHub &rarr;</a>
+            </div>
           </div>
+
+          <div class="project-card">
+            <h3>Solana Staking PoC</h3>
+            <p>
+              A proof-of-concept for a staking mechanism on the Solana blockchain, exploring on-chain
+              staking logic with a separate frontend and backend structure.
+            </p>
+            <div class="tags">
+              <span class="tag">Solana</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vipbondre/solana-staking-poc" target="_blank">GitHub &rarr;</a>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        <div class="project-card">
-          <h3>Get Your Pass</h3>
-          <p>
-            A private, secure ticketing system powered by the XRP Ledger. Organisers cannot identify buyers;
-            payment processors are unaware of the purchase purpose. Supports offline ticket validation
-            without a central authority. Won the XRPLLabs Hackathon conducted with IIT Bombay.
-          </p>
-          <div class="tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">XRPL</span>
+      <section id="systems">
+        <h2>Systems &amp; Algorithms</h2>
+        <div class="project-list">
+
+          <div class="project-card">
+            <h3>Merkle Tree</h3>
+            <p>
+              A C++ implementation of a cryptographic Merkle Tree for efficient data integrity verification.
+              Includes level-by-level tree construction, Merkle root computation, sibling hash path retrieval,
+              and block validation using SHA-256 via OpenSSL.
+            </p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">OpenSSL</span>
+              <span class="tag">Cryptography</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vipbondre/merkle_tree" target="_blank">GitHub &rarr;</a>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/vipbondre/tokenization_xrpl" target="_blank">GitHub &rarr;</a>
+
+          <div class="project-card">
+            <h3>Scheduling DAGs on Heterogeneous Systems</h3>
+            <p>
+              Implements two fairness-based scheduling strategies for multiple Directed Acyclic Graphs (DAGs)
+              alongside the HEFT (Heterogeneous Earliest Finish Time) rank-based algorithm for single DAG
+              scheduling in parallel and distributed systems.
+            </p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">Parallel Systems</span>
+              <span class="tag">Algorithms</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vipbondre/Scheduling-multiple-DAGs-onto-Heterogeneous-Systems" target="_blank">GitHub &rarr;</a>
+            </div>
           </div>
+
+          <div class="project-card">
+            <h3>Grid Files</h3>
+            <p>
+              Implements grid file functionality for efficient spatial data storage and retrieval in secondary
+              memory. Dynamically adjusts the grid structure to accommodate data points and supports range queries.
+            </p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Spatial Indexing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vipbondre/Implementing-Grid-Files" target="_blank">GitHub &rarr;</a>
+            </div>
+          </div>
+
         </div>
+      </section>
 
-        <div class="project-card">
-          <h3>Merkle Tree</h3>
-          <p>
-            A C++ implementation of a cryptographic Merkle Tree for efficient data integrity verification.
-            Includes level-by-level tree construction, Merkle root computation, sibling hash path retrieval,
-            and block validation using SHA-256 via OpenSSL.
-          </p>
-          <div class="tags">
-            <span class="tag">C++</span>
-            <span class="tag">OpenSSL</span>
-            <span class="tag">Cryptography</span>
+      <section id="research">
+        <h2>Research</h2>
+        <div class="project-list">
+
+          <div class="project-card">
+            <h3>Periodic Spatio-Temporal Hotspot Detection</h3>
+            <p>
+              Given a Geospatial region with time-stamped events, the goal is to find sub-regions (Hotspots) with high intensity of events at periodic intervals.
+              The approach can detect these patterns along with pruning chance patterns and trivial persistent patterns with better computational complexity.
+            </p>
+            <div class="tags">
+              <span class="tag">Algorithms</span>
+              <span class="tag">Geospatial</span>
+              <span class="tag">Research</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ieeexplore.ieee.org/document/10031062" target="_blank">IEEE &rarr;</a>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/vipbondre/merkle_tree" target="_blank">GitHub &rarr;</a>
+
+          <div class="project-card">
+            <h3>Hybrid Refresh: Improving DRAM Performance by Handling Weak Rows Smartly</h3>
+            <p>
+              A novel technique that can handle weak rows smartly and avoids bottleneck for the overall refresh rate.
+              The proposed approach reduces the overall refresh rate without compromising DRAM space.
+            </p>
+            <div class="tags">
+              <span class="tag">Memory Systems</span>
+              <span class="tag">DRAM</span>
+              <span class="tag">Research</span>
+            </div>
+            <div class="project-links">
+              <a href="https://dl.acm.org/doi/10.1145/3565053.3565060" target="_blank">ACM &rarr;</a>
+            </div>
           </div>
+
         </div>
+      </section>
 
-        <div class="project-card">
-          <h3>Scheduling DAGs on Heterogeneous Systems</h3>
-          <p>
-            Implements two fairness-based scheduling strategies for multiple Directed Acyclic Graphs (DAGs)
-            alongside the HEFT (Heterogeneous Earliest Finish Time) rank-based algorithm for single DAG
-            scheduling in parallel and distributed systems.
-          </p>
-          <div class="tags">
-            <span class="tag">C++</span>
-            <span class="tag">Parallel Systems</span>
-            <span class="tag">Algorithms</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/vipbondre/Scheduling-multiple-DAGs-onto-Heterogeneous-Systems" target="_blank">GitHub &rarr;</a>
-          </div>
-        </div>
-
-      </div>
     </div>
   </main>
 
