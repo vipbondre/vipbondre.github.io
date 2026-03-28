@@ -135,6 +135,20 @@ section h2 {
 .project-card .project-links { display: flex; gap: 16px; }
 .project-card .project-links a { font-size: 0.875rem; }
 
+/* Experience */
+.experience-list { display: flex; flex-direction: column; gap: 32px; }
+.experience-item { border-left: 2px solid var(--border); padding-left: 20px; }
+.experience-item .role { font-weight: 600; font-size: 0.95rem; margin-bottom: 2px; }
+.experience-item .company { color: var(--muted); font-size: 0.875rem; margin-bottom: 4px; }
+.experience-item .period { color: var(--muted); font-size: 0.8rem; margin-bottom: 10px; }
+.experience-item ul { color: var(--muted); font-size: 0.875rem; line-height: 1.7; padding-left: 16px; }
+
+/* Education */
+.education-list { display: flex; flex-direction: column; gap: 20px; }
+.education-item .degree { font-weight: 600; font-size: 0.95rem; margin-bottom: 2px; }
+.education-item .institution { color: var(--muted); font-size: 0.875rem; }
+.education-item .period { color: var(--muted); font-size: 0.8rem; }
+
 /* Contact page */
 .contact-info { display: flex; flex-direction: column; gap: 16px; }
 .contact-info .item { display: flex; align-items: center; gap: 12px; font-size: 0.9rem; }
