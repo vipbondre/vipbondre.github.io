@@ -63,9 +63,22 @@ main { padding-bottom: 80px; }
 
 /* Hero */
 .hero { margin-bottom: 64px; }
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.hero-text { flex: 1; }
 .hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
 .hero .role { color: var(--muted); font-size: 1.05rem; margin-bottom: 20px; }
-.hero p { color: var(--muted); max-width: 560px; line-height: 1.7; }
+.hero p { color: var(--muted); max-width: 480px; line-height: 1.7; }
+.hero-avatar { flex-shrink: 0; }
+.hero-avatar img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+}
 
 /* Section */
 section { margin-bottom: 56px; }
@@ -138,4 +151,6 @@ footer {
 @media (max-width: 600px) {
   nav ul { gap: 20px; }
   .hero h1 { font-size: 1.6rem; }
+  .hero-content { flex-direction: column-reverse; gap: 28px; }
+  .hero-avatar img { width: 150px; height: 150px; }
 }
