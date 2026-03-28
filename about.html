@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience &mdash; Vipul Bondre</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 </head>
 <body>
   <nav>
     <div class="container">
       <a href="index.html" class="logo">vipbondre</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" title="Switch to dark mode">☾</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -33,51 +37,77 @@
       <section id="experience">
         <h2>Experience</h2>
         <div class="experience-list">
+
           <div class="experience-item">
-            <div class="role">Lead Software Engineer</div>
-            <div class="company">Cadence Design Systems</div>
-            <div class="period">July 2025 &ndash; Present</div>
+            <div class="exp-header">
+              <div>
+                <div class="role">Lead Software Engineer</div>
+                <div class="company">Cadence Design Systems</div>
+              </div>
+              <div class="period">July 2025 &ndash; Present</div>
+            </div>
             <ul>
               <li>Working on the Virtuoso Power Manager project, performing low-power in-design checks involving power intent, UPF, and extractions.</li>
             </ul>
           </div>
+
           <div class="experience-item">
-            <div class="role">Senior R&amp;D Engineer</div>
-            <div class="company">Synopsys Inc. &mdash; Noida</div>
-            <div class="period">Jan 2024 &ndash; July 2025</div>
+            <div class="exp-header">
+              <div>
+                <div class="role">Senior R&amp;D Engineer</div>
+                <div class="company">Synopsys Inc.</div>
+              </div>
+              <div class="period">Jan 2024 &ndash; July 2025</div>
+            </div>
             <ul>
               <li>Developed and managed fillrunsets in the Physical Signoff Fill team, optimizing fill structures to address thermal issues in advanced nodes below 2nm, achieving up to 4°C reduction.</li>
               <li>Enhanced functionality, performance, and scalability of signoff fill solutions while ensuring manufacturing constraints and DRC compliance.</li>
             </ul>
           </div>
+
           <div class="experience-item">
-            <div class="role">R&amp;D Engineer II</div>
-            <div class="company">X-Epic Corp. Ltd. &mdash; Noida</div>
-            <div class="period">July 2022 &ndash; Jan 2024</div>
+            <div class="exp-header">
+              <div>
+                <div class="role">R&amp;D Engineer II</div>
+                <div class="company">X-Epic Corp. Ltd.</div>
+              </div>
+              <div class="period">July 2022 &ndash; Jan 2024</div>
+            </div>
             <ul>
               <li>Developed a novel hybrid approach for Circuit Equivalence Checking (CEC) by integrating And-Inverter Graphs (AIGs) and Binary Decision Diagrams (BDDs) after a comprehensive literature survey.</li>
               <li>Implemented and scaled a proof-of-concept for the hybrid CEC approach, improving efficiency for larger designs and accelerating the CEC backend by up to 10 times through multithreading-based parallelization.</li>
               <li>As a CEC product development team member, developed over 30 commands encompassing circuit query, circuit edit, and guidance functionalities.</li>
             </ul>
           </div>
+
           <div class="experience-item">
-            <div class="role">R&amp;D Intern</div>
-            <div class="company">X-Epic Corp. Ltd. &mdash; Remote</div>
-            <div class="period">Jan 2022 &ndash; June 2022</div>
+            <div class="exp-header">
+              <div>
+                <div class="role">R&amp;D Intern</div>
+                <div class="company">X-Epic Corp. Ltd.</div>
+              </div>
+              <div class="period">Jan 2022 &ndash; June 2022</div>
+            </div>
             <ul>
               <li>Polished skill set in C++, Linux, GDB, Shell Scripting, and System Verilog, developing a proficient skill set applicable to real-world projects.</li>
               <li>Resolved various bugs in the System Verilog Parser, enabling successful parsing of unsynthesizable initial block.</li>
             </ul>
           </div>
+
           <div class="experience-item">
-            <div class="role">Software Developer</div>
-            <div class="company">Pragat Maharashtra Mandal &mdash; Degloor</div>
-            <div class="period">Sept 2018 &ndash; June 2019</div>
+            <div class="exp-header">
+              <div>
+                <div class="role">Software Developer</div>
+                <div class="company">Pragat Maharashtra Mandal</div>
+              </div>
+              <div class="period">Sept 2018 &ndash; June 2019</div>
+            </div>
             <ul>
               <li>Developed and optimized a video platform for an ed-tech website, enhancing performance, user experience, and UI responsiveness using threading for faster load times.</li>
               <li>Redesigned key components, optimized backend API calls, and improved data handling to enhance frontend efficiency.</li>
             </ul>
           </div>
+
         </div>
       </section>
 
@@ -85,21 +115,29 @@
         <h2>Education</h2>
         <div class="education-list">
           <div class="education-item">
-            <div class="degree">M.Tech in Computer Science &amp; Engineering</div>
-            <div class="institution">IIT Ropar &mdash; Punjab, India &nbsp;&middot;&nbsp; GPA 8.63 / 10</div>
-            <div class="period">2020 &ndash; 2022</div>
+            <div class="exp-header">
+              <div>
+                <div class="degree">M.Tech in Computer Science &amp; Engineering</div>
+                <div class="institution">IIT Ropar &nbsp;&middot;&nbsp; GPA 8.63 / 10</div>
+              </div>
+              <div class="period">2020 &ndash; 2022</div>
+            </div>
           </div>
           <div class="education-item">
-            <div class="degree">B.Tech in Computer Science &amp; Engineering</div>
-            <div class="institution">Government College of Engineering &mdash; Aurangabad, India</div>
-            <div class="period">2014 &ndash; 2018</div>
+            <div class="exp-header">
+              <div>
+                <div class="degree">B.Tech in Computer Science &amp; Engineering</div>
+                <div class="institution">Government College of Engineering, Aurangabad</div>
+              </div>
+              <div class="period">2014 &ndash; 2018</div>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="coursework">
         <h2>Coursework</h2>
-        <p style="color: var(--muted); font-size: 0.9rem;">
+        <p style="color: var(--text); font-size: 0.95rem;">
           Data Structures, Algorithms, Operating Systems, Computer Architecture, Memory Systems &amp; Architecture, Compiler Design, Digital Electronics
         </p>
       </section>
@@ -110,5 +148,6 @@
   <footer>
     <div class="container">&copy; 2026 Vipul Bondre</div>
   </footer>
+  <script src="js/theme.js"></script>
 </body>
 </html>

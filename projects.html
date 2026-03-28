@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects &mdash; Vipul Bondre</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 </head>
 <body>
   <nav>
     <div class="container">
       <a href="index.html" class="logo">vipbondre</a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Experience</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" title="Switch to dark mode">☾</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Experience</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -192,5 +196,6 @@
   <footer>
     <div class="container">&copy; 2026 Vipul Bondre</div>
   </footer>
+  <script src="js/theme.js"></script>
 </body>
 </html>

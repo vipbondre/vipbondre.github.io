@@ -5,16 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vipul Bondre</title>
   <link rel="stylesheet" href="css/style.css" />
+  <script>if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');</script>
 </head>
 <body>
   <nav>
     <div class="container">
       <a href="index.html" class="logo">vipbondre</a>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" title="Switch to dark mode">☾</button>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -25,7 +29,7 @@
         <div class="hero-content">
           <div class="hero-text">
             <h1>Vipul Bondre</h1>
-            <p class="role">Lead Software Engineer at Cadence &mdash; IIT Ropar M.Tech</p>
+            <p class="role">Lead Software Engineer at Cadence &nbsp;|&nbsp; IIT Ropar</p>
             <p>
               Software engineer with 4+ years of experience in the EDA industry, having worked across multiple
               products in physical signoff, equivalence checking, and low-power design.
@@ -35,6 +39,10 @@
               compilers, and the low-level details that make software fast and correct. Outside of work, I build
               smart contracts and decentralised applications from the ground up.
             </p>
+            <div class="cta-buttons">
+              <a href="about.html" class="cta-btn cta-btn-primary">Experience &rarr;</a>
+              <a href="projects.html" class="cta-btn cta-btn-secondary">Projects &rarr;</a>
+            </div>
           </div>
           <div class="hero-avatar">
             <img src="images/avatar.svg" alt="Vipul Bondre" />
@@ -42,21 +50,55 @@
         </div>
       </div>
 
+      <div class="achievements">
+        <div class="achievement-item">
+          <div class="number">4+</div>
+          <div class="label">Years Experience</div>
+        </div>
+        <div class="achievement-item">
+          <div class="number">AIR 864</div>
+          <div class="label">GATE CSE · 99.1%ile</div>
+        </div>
+        <div class="achievement-item">
+          <div class="number">AIR 4412</div>
+          <div class="label">JEE Advanced 2014</div>
+        </div>
+        <div class="achievement-item">
+          <div class="number">8.63</div>
+          <div class="label">GPA · IIT Ropar</div>
+        </div>
+        <div class="achievement-item">
+          <div class="number">2</div>
+          <div class="label">Hackathon Wins</div>
+        </div>
+      </div>
+
       <section>
         <h2>Skills</h2>
-        <div class="skills">
-          <span class="skill">C++</span>
-          <span class="skill">C</span>
-          <span class="skill">Python</span>
-          <span class="skill">JavaScript</span>
-          <span class="skill">Solidity</span>
-          <span class="skill">Linux</span>
-          <span class="skill">Multi-threading</span>
-          <span class="skill">System Design</span>
-          <span class="skill">Ethereum</span>
-          <span class="skill">XRPL</span>
-          <span class="skill">Hardhat</span>
-          <span class="skill">Git</span>
+        <div class="skill-groups">
+          <div>
+            <div class="skill-group-label">Systems &amp; EDA</div>
+            <div class="skills">
+              <span class="skill">C++</span>
+              <span class="skill">C</span>
+              <span class="skill">Python</span>
+              <span class="skill">Linux</span>
+              <span class="skill">Multi-threading</span>
+              <span class="skill">System Design</span>
+              <span class="skill">Git</span>
+            </div>
+          </div>
+          <div>
+            <div class="skill-group-label">Blockchain</div>
+            <div class="skills">
+              <span class="skill">Solidity</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Ethereum</span>
+              <span class="skill">XRPL</span>
+              <span class="skill">Hardhat</span>
+              <span class="skill">ethers.js</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -79,5 +121,6 @@
   <footer>
     <div class="container">&copy; 2026 Vipul Bondre</div>
   </footer>
+  <script src="js/theme.js"></script>
 </body>
 </html>
