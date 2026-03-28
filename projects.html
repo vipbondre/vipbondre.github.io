@@ -9,7 +9,7 @@
 <body>
   <nav>
     <div class="container">
-      <a href="index.html" class="logo">vbondre</a>
+      <a href="index.html" class="logo">vipbondre</a>
       <ul>
         <li><a href="index.html">About</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
@@ -23,57 +23,80 @@
 
       <div class="page-header">
         <h1>Projects</h1>
-        <p>A selection of things I've built.</p>
+        <p>Things I've built, mostly in the blockchain space.</p>
       </div>
 
       <div class="project-list">
 
         <div class="project-card">
-          <h3>Project Alpha</h3>
+          <h3>Trust in the Shadow</h3>
           <p>
-            A short description of what this project does and what problem it solves.
-            Built to scratch a personal itch and ended up being useful for others too.
+            A decentralised game built on Ethereum where players face a Prisoner's Dilemma against a bot.
+            Players bet ETH and choose to "Steal" or "Share" across 10 rounds — winning doubles their bet.
+            Built with Solidity smart contracts deployed on Sepolia Testnet, with MetaMask integration.
           </p>
           <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">PostgreSQL</span>
+            <span class="tag">Solidity</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Hardhat</span>
+            <span class="tag">ethers.js</span>
+            <span class="tag">Ethereum</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/vbondre/project-alpha" target="_blank">GitHub &rarr;</a>
-            <a href="#" target="_blank">Live demo &rarr;</a>
+            <a href="https://github.com/vipbondre/game_of_life" target="_blank">GitHub &rarr;</a>
+            <a href="https://shareorsteal.vercel.app/" target="_blank">Try it &rarr;</a>
           </div>
         </div>
 
         <div class="project-card">
-          <h3>Project Beta</h3>
+          <h3>Get Your Pass</h3>
           <p>
-            Another project description goes here. Explain what makes it interesting
-            or what you learned from building it.
+            A private, secure ticketing system powered by the XRP Ledger. Organisers cannot identify buyers;
+            payment processors are unaware of the purchase purpose. Supports offline ticket validation
+            without a central authority. Won the XRPLLabs Hackathon conducted with IIT Bombay.
           </p>
           <div class="tags">
-            <span class="tag">TypeScript</span>
-            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
             <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">XRPL</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/vbondre/project-beta" target="_blank">GitHub &rarr;</a>
+            <a href="https://github.com/vipbondre/tokenization_xrpl" target="_blank">GitHub &rarr;</a>
           </div>
         </div>
 
         <div class="project-card">
-          <h3>Project Gamma</h3>
+          <h3>Merkle Tree</h3>
           <p>
-            Third project description. Keep it brief &mdash; one to three sentences
-            is enough. Let the code speak for itself.
+            A C++ implementation of a cryptographic Merkle Tree for efficient data integrity verification.
+            Includes level-by-level tree construction, Merkle root computation, sibling hash path retrieval,
+            and block validation using SHA-256 via OpenSSL.
           </p>
           <div class="tags">
-            <span class="tag">Go</span>
-            <span class="tag">Docker</span>
-            <span class="tag">AWS</span>
+            <span class="tag">C++</span>
+            <span class="tag">OpenSSL</span>
+            <span class="tag">Cryptography</span>
           </div>
           <div class="project-links">
-            <a href="https://github.com/vbondre/project-gamma" target="_blank">GitHub &rarr;</a>
+            <a href="https://github.com/vipbondre/merkle_tree" target="_blank">GitHub &rarr;</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Scheduling DAGs on Heterogeneous Systems</h3>
+          <p>
+            Implements two fairness-based scheduling strategies for multiple Directed Acyclic Graphs (DAGs)
+            alongside the HEFT (Heterogeneous Earliest Finish Time) rank-based algorithm for single DAG
+            scheduling in parallel and distributed systems.
+          </p>
+          <div class="tags">
+            <span class="tag">C++</span>
+            <span class="tag">Parallel Systems</span>
+            <span class="tag">Algorithms</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/vipbondre/Scheduling-multiple-DAGs-onto-Heterogeneous-Systems" target="_blank">GitHub &rarr;</a>
           </div>
         </div>
 
